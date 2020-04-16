@@ -1,13 +1,15 @@
 // Imprtando librerias
 const express = require("express");
 const bodyParser = require("body-parser");
+const cors = require('cors');
 
 // Inicializando librerias
 const server = express();
 server.use(express.json());
+server.use(cors());
 
 // Definiendo constantes
-const port = 3000
+const port = 3001
 
 server.get("/",(req, resp) => {
 })
