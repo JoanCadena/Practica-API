@@ -10,7 +10,6 @@ server.use(express.json());
 const port = 3000
 
 server.get("/",(req, resp) => {
-    resp.send("Hola Mundo!")
 })
 
 // Levantando servidor
