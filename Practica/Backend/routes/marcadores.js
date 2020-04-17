@@ -7,7 +7,7 @@ const _controlador = require("../controllers/marcadores");
 router.get('/marcadores', (req, resp) => {
     _controlador.consultarUrls().then(respuestaDB => {
         let registros = respuestaDB.rows;
-        resp.send({ ok: true, mensaje: 'Consultado Efectivamente', info: registros });
+        resp.send(registros);
     }).catch(error => {
         resp.send(error);
     })
