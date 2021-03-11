@@ -7,7 +7,7 @@ class ServicioPG {
             user: "postgres",
             hort: "localhost",
             database: "api-bookmarks",
-            password: "Inmortal20",
+            password: "",
             port: 5432,
         })
     }
